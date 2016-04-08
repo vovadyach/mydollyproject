@@ -1,0 +1,43 @@
+@import "variables/var";
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  font-family: "GTWalsheimLight", sans-serif;
+  background: #FAFAFA;
+  width: 100%;
+  max-width: 100%;
+  font-size: 14px;
+  position: relative;
+  z-index: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "GTWalsheimBold", sans-serif;
+  color: $dark-grey;
+  text-transform: uppercase;
+
+}
+p,
+span
+{
+  font-family: GTWalsheimLight, sans-serif;
+  color: $dark-grey;
+
+}
+
+.layout {
+  width: 780px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+

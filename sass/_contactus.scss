@@ -1,0 +1,112 @@
+//contact us
+
+
+.contact-scheme {
+  float: left;
+  width: 45%;
+}
+.contact-scheme-inner {
+  padding-top: 40px;
+  width: 100%;
+  p {
+    color: $grey-font;
+  }
+}
+
+.contact-form {
+  padding-top: 29.5px;
+  width: 50%;
+  float: right;
+  margin: 30px auto;
+}
+.input-field-w {
+  width: 100%;
+}
+
+.input-h {
+  height: 40px;
+}
+
+.txt-area {
+  height: 100px;
+  resize: none;
+}
+.btn-sb-contactus {
+  background-color: $dolly-green;
+  color: #FFF;
+  text-transform: uppercase;
+  font-family: GTWalsheimBold, sans-serif;
+  height: 39px;
+  font-size: 13px;
+  border: 1px solid;
+}
+::-webkit-input-placeholder {
+  font-size: 14px;
+  color: $grey-font;
+  font-family: GTWalsheimLight, sans-serif;
+  padding-left: 15px;
+}
+
+.form-group {
+  position: relative;
+
+  &.required:before {
+    content: "*";
+    color: #E32;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    font-size: large;
+  }
+  &.invalid {
+    [type="text"],
+    [type="email"] {
+      border: 2px solid #EE3322;
+    }
+  }
+  &.invalid:after {
+    content: "Invalid input!";
+    color: #E32;
+    position: absolute;
+    top: 0;
+    right: -90px;
+  }
+  &.disabled {
+    pointer-events: none;
+    opacity: 0.4;
+  }
+  &.success {
+    [type="text"],
+    [type="email"] {
+      background-color: #bed5c1;
+      color: #FFFFFF;
+      &::-webkit-input-placeholder {
+        color: #FFFFFF;
+      }
+    }
+    &.success:after {
+      content: "Success!";
+      color: #444444;
+      position: absolute;
+      top: 0;
+      right: -65px;
+    }
+  }
+}
+
+
+input[type=text],[type="email"], textarea {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+}
+input[type=text]:focus,[type="email"]:focus, textarea:focus {
+  box-shadow: 0 0 5px rgb(50, 208, 197);
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid rgb(107, 193, 163);
+}

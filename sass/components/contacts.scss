@@ -1,0 +1,74 @@
+//contacts
+
+@import "../variables/var";
+
+.main-contacts {
+  padding-bottom: 120px;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.main-title {
+  height: 39px;
+  font-size: 28px;
+  color: $dark-grey;
+}
+.sub-header {
+  height: 19px;
+  font-size: 13px;
+  color: $dark-grey;
+}
+.divider {
+  width: 100%;
+  height: 0;
+  padding: 0;
+  margin: 0;
+  border: 1px solid $dividers;
+}
+
+.ul-main-contacts {
+  list-style: none;
+  float: left;
+  width: 50%;
+  color: $dark-grey;
+  padding-top: 20px;
+  padding-left: 0;
+  b {
+    text-transform: uppercase;
+    font-family: "GTWalsheimBold", sans-serif;
+  }
+}
+.clear-fix:after {
+  content: '.';
+  display: block;
+  clear: both;
+  visibility: hidden;
+}
+.levering-contact {
+  margin-bottom: 70px;
+  color: $dark-grey;
+}
+.right-align {
+  float: right;
+  text-align: left;
+}
+.red-txt {
+  color: #ff0000;
+}
+.text-p {
+  padding-top: 4px;
+  height: 92px;
+  font-size: 14px;
+  color: $dark-grey
+}
+.address {
+  padding: 0;
+  margin: 0;
+  width: 157px;
+  font-size: 14px;
+}
+
+.main-contacts-articles {
+  font-family: GTWalsheimLight, sans-serif;
+  font-size: 14px;
+}

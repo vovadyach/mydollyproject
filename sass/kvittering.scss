@@ -1,0 +1,109 @@
+//kvittering.scss
+
+.kvitt-content {
+  width: 100%;
+  line-height: 20px;
+
+    .row {
+      padding-top: 20px;
+      padding-bottom: 60px;
+    h4 {
+      font-size: 13px;
+      margin-bottom: 0;
+      margin-top: 0px;
+    }
+    p {
+      margin-top: 0;
+    }
+  }
+  [class*='col-']  {
+    padding-left: 0;
+  }
+}
+
+.order-din {
+  position: relative;
+  padding-top: 20.2px;
+  .price-in-kr {
+    position: absolute;
+    right: 0;
+    font-weight: 500px;
+  }
+  .old-price {
+    line-height: 2;
+    right: 50px;
+    color: $grey-font;
+    font-size: 12px;
+  }
+  .order-din-img {
+    float: left;
+    width: 70px;
+    height: 69.1px;
+    img {
+      width: 100%;
+      vertical-align: middle;
+      height: auto;
+    }
+  }
+  .order-content-outer {
+    width: 440px;
+    float: left;
+    .order-content {
+      width: 100%;
+      float: left;
+      margin-left: 20px;
+      .title {
+        font-size: 20px;
+        font-weight: bold;
+        color: $dolly-red;
+        font-family: TexGyretermesBold;
+        margin: 0;
+        padding: 0;
+      }
+      p {
+        margin: 0;
+        padding: 0 ;
+      }
+    }
+  }
+}
+
+.order-align-total {
+  width: 100%;
+  padding-top: 24.5px;
+  position: relative;
+  h4 {
+    margin-bottom: 0;
+  }
+  p {
+    margin-top: 0;
+  }
+  .order-left {
+    width: 45%;
+    float: left;
+    padding-left: 20px;
+  }
+  .order-right {
+    float: right;
+    height: 100px;
+    width: 50%;
+    .divider-right {
+      width: 100%;
+      margin-top: 40px;
+    }
+  }
+  .total-title {
+    float: left;
+    color: $grey-font;
+    font-size: 13px;
+  }
+  .total-price {
+    float: right;
+    font-size: 16px;
+    color: $dark-grey;
+  }
+}
+
+.font-bold {
+  font-family: GTWalsheimBold, sans-serif;
+}

@@ -1,0 +1,83 @@
+//header.scss
+
+.header-container {
+  position: relative;
+  width: 1220px;
+  height: 150px;
+  margin: auto;
+  padding-top: 30px;
+}
+
+.logo-container {
+    float: left;
+    margin-left: 20px;
+  img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+  }
+}
+  .header-right {
+    float: right;
+    .header-cart-item {
+      margin-left: 5px;
+      display: inline-block;
+      background: #5db167;
+      color: #fff;
+      width: 24px;
+      height: 24px;
+      line-height: 24px;
+      text-align: center;
+    }
+  }
+.navigation-outer{
+  padding-top: 20px;
+  a {
+    text-decoration: none;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #353637;
+    font-weight: bold;
+    font-family: "GTWalsheimBold", sans-serif;
+  }
+}
+.navigation {
+  padding-top: 5px;
+  margin: 0 0 0 25px;
+  float: left;
+  ul {
+    margin: 0;
+    padding: 0;
+    float: left;
+    list-style-type: none;
+    width: 100%;
+  }
+  li {
+    display: inline-block;
+    padding-left: 20px;
+  }
+  .li-item {
+
+  }
+  a {
+    font-size: 15px;
+    font-family: "GTWalsheimBold", sans-serif;
+
+  }
+}
+.ul-nav {
+  ul {
+    padding-right: 20px;
+  }
+
+}
+.basket-item {
+  width: 25px;
+  height: 22.5px;
+  display: inline-block;
+  margin-right: 10.1px;
+  color: #acacb5;
+  float: left;
+  background: url(../images/basket.svg);
+  cursor: pointer;
+}

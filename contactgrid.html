@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="stylesheets/style.css"/>
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <title>Page 9.1</title>
+</head>
+<body>
+<header class="header-container">
+    <div class="logo-container">
+        <a href="#">
+            <img src="images/logo.svg" alt="Dolly Dimple's"/>
+        </a>
+    </div>
+    <div class="navigation-outer">
+        <nav class="navigation">
+            <ul class="ul-nav">
+                <li class="li-item"><a href="#">Menu</a></li>
+                <li class="li-item"><a href="#">Restauranter</a></li>
+                <li class="li-item"><a href="#">Min side</a></li>
+            </ul>
+        </nav>
+        <div class="header-right">
+            <div class="header-inner-right">
+                <span class="basket-item"></span>
+                <a href="#" class="header-right-link">Bestilling
+                    <span class="header-cart-item">0</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="mask">
+    <div id="googleMap"></div>
+    <div class="input">
+        <div class="btn-submit-primary">
+            <input  class="btn-submit-prm" type="submit" value="SØK" />
+        </div>
+        <div class="btn-input">
+            <input type="text" class="txtbox" placeholder="Søk etter sted"/>
+        </div>
+    </div>
+</div>
+<hr class="divider-main"/>
+
+<div class="contacts-container ">
+    <div class="contacts-content clear-fix">
+        <ul class="contacts-nav">
+            <li class="contacts-li-item"><i class="fa fa-map-marker map-marker">&nbsp;2 km</i></li>
+            <li class="contacts-li-item"><b>Dolly Dimple’s Navn</b></li>
+            <li class="contacts-li-item">Adresse Gate 14</li>
+            <li class="contacts-li-item">0258 Oslo</li>
+            <li class="contacts-li-item">
+                <b>
+                    <a href="#">Se åpningstider<i class="fa fa-long-arrow-right arrow-right"></i></a>
+                </b>
+            </li>
+        </ul>
+
+        <ul class="contacts-nav">
+            <li class="contacts-li-item"><i class="fa fa-map-marker map-marker">&nbsp;2 km</i></li>
+            <li class="contacts-li-item"><b>Dolly Dimple’s Navn</b></li>
+            <li class="contacts-li-item">Adresse Gate 14</li>
+            <li class="contacts-li-item">0258 Oslo</li>
+            <li class="contacts-li-item">
+                <b>
+                    <a href="#">Se åpningstider<i class="fa fa-long-arrow-right arrow-right"></i></a>
+                </b>
+            </li>
+        </ul>
+
+        <ul class="contacts-nav">
+            <li class="contacts-li-item"><i class="fa fa-map-marker map-marker">&nbsp;2 km</i></li>
+            <li class="contacts-li-item"><b>Dolly Dimple’s Navn</b></li>
+            <li class="contacts-li-item">Adresse Gate 14</li>
+            <li class="contacts-li-item">0258 Oslo</li>
+            <li class="contacts-li-item">
+                <b>
+                    <a href="#">Se åpningstider<i class="fa fa-long-arrow-right arrow-right"></i></a>
+                </b>
+            </li>
+        </ul>
+
+        <ul class="contacts-nav">
+            <li class="contacts-li-item"><i class="fa fa-map-marker map-marker">&nbsp;2 km</i></li>
+            <li class="contacts-li-item"><b>Dolly Dimple’s Navn</b></li>
+            <li class="contacts-li-item">Adresse Gate 14</li>
+            <li class="contacts-li-item">0258 Oslo</li>
+            <li class="contacts-li-item">
+                <b>
+                    <a href="#">Se åpningstider<i class="fa fa-long-arrow-right arrow-right"></i></a>
+                </b>
+            </li>
+        </ul>
+
+        <ul class="contacts-nav">
+            <li class="contacts-li-item"><i class="fa fa-map-marker map-marker">&nbsp;2 km</i></li>
+            <li class="contacts-li-item"><b>Dolly Dimple’s Navn</b></li>
+            <li class="contacts-li-item">Adresse Gate 14</li>
+            <li class="contacts-li-item">0258 Oslo</li>
+            <li class="contacts-li-item">
+                <b>
+                    <a href="#">Se åpningstider<i class="fa fa-long-arrow-right arrow-right"></i></a>
+                </b>
+            </li>
+        </ul>
+
+        <ul class="contacts-nav">
+            <li class="contacts-li-item"><i class="fa fa-map-marker map-marker">&nbsp;2 km</i></li>
+            <li class="contacts-li-item"><b>Dolly Dimple’s Navn</b></li>
+            <li class="contacts-li-item">Adresse Gate 14</li>
+            <li class="contacts-li-item">0258 Oslo</li>
+            <li class="contacts-li-item">
+                <b>
+                    <a href="#">Se åpningstider<i class="fa fa-long-arrow-right arrow-right"></i></a>
+                </b>
+            </li>
+        </ul>
+
+        <ul class="contacts-nav">
+            <li class="contacts-li-item"><i class="fa fa-map-marker map-marker">&nbsp;2 km</i></li>
+            <li class="contacts-li-item"><b>Dolly Dimple’s Navn</b></li>
+            <li class="contacts-li-item">Adresse Gate 14</li>
+            <li class="contacts-li-item">0258 Oslo</li>
+            <li class="contacts-li-item">
+                <b>
+                    <a href="#">Se åpningstider<i class="fa fa-long-arrow-right arrow-right"></i></a>
+                </b>
+            </li>
+        </ul>
+
+        <ul class="contacts-nav">
+            <li class="contacts-li-item"><i class="fa fa-map-marker map-marker">&nbsp;2 km</i></li>
+            <li class="contacts-li-item"><b>Dolly Dimple’s Navn</b></li>
+            <li class="contacts-li-item">Adresse Gate 14</li>
+            <li class="contacts-li-item">0258 Oslo</li>
+            <li class="contacts-li-item">
+                <b>
+                    <a href="#">Se åpningstider<i class="fa fa-long-arrow-right arrow-right"></i></a>
+                </b>
+            </li>
+        </ul>
+
+        <ul class="contacts-nav">
+            <li class="contacts-li-item"><i class="fa fa-map-marker map-marker">&nbsp;2 km</i></li>
+            <li class="contacts-li-item"><b>Dolly Dimple’s Navn</b></li>
+            <li class="contacts-li-item">Adresse Gate 14</li>
+            <li class="contacts-li-item">0258 Oslo</li>
+            <li class="contacts-li-item">
+                <b>
+                    <a href="#">Se åpningstider<i class="fa fa-long-arrow-right arrow-right"></i></a>
+                </b>
+            </li>
+        </ul>
+
+        <ul class="contacts-nav">
+            <li class="contacts-li-item"><i class="fa fa-map-marker map-marker">&nbsp;2 km</i></li>
+            <li class="contacts-li-item"><b>Dolly Dimple’s Navn</b></li>
+            <li class="contacts-li-item">Adresse Gate 14</li>
+            <li class="contacts-li-item">0258 Oslo</li>
+            <li class="contacts-li-item">
+                <b>
+                    <a href="#">Se åpningstider<i class="fa fa-long-arrow-right arrow-right"></i></a>
+                </b>
+            </li>
+        </ul>
+
+        <ul class="contacts-nav">
+            <li class="contacts-li-item"><i class="fa fa-map-marker map-marker">&nbsp;2 km</i></li>
+            <li class="contacts-li-item"><b>Dolly Dimple’s Navn</b></li>
+            <li class="contacts-li-item">Adresse Gate 14</li>
+            <li class="contacts-li-item">0258 Oslo</li>
+            <li class="contacts-li-item">
+                <b>
+                    <a href="#">Se åpningstider<i class="fa fa-long-arrow-right arrow-right"></i></a>
+                </b>
+            </li>
+        </ul>
+
+        <ul class="contacts-nav">
+            <li class="contacts-li-item"><i class="fa fa-map-marker map-marker">&nbsp;2 km</i></li>
+            <li class="contacts-li-item"><b>Dolly Dimple’s Navn</b></li>
+            <li class="contacts-li-item">Adresse Gate 14</li>
+            <li class="contacts-li-item">0258 Oslo</li>
+            <li class="contacts-li-item">
+                <b>
+                    <a href="#">Se åpningstider<i class="fa fa-long-arrow-right arrow-right"></i></a>
+                </b>
+            </li>
+        </ul>
+
+        <ul class="contacts-nav">
+            <li class="contacts-li-item"><i class="fa fa-map-marker map-marker">&nbsp;2 km</i></li>
+            <li class="contacts-li-item"><b>Dolly Dimple’s Navn</b></li>
+            <li class="contacts-li-item">Adresse Gate 14</li>
+            <li class="contacts-li-item">0258 Oslo</li>
+            <li class="contacts-li-item">
+                <b>
+                    <a href="#">Se åpningstider<i class="fa fa-long-arrow-right arrow-right"></i></a>
+                </b>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<footer>
+    <div class="footer">
+        <hr class="divider divider-footer"/>
+        <div class="footer-content">
+            <ul class="footer-navigation-left">
+
+                <li>
+                    <b class="bold-number"><i class="fa fa-phone icon-some"></i>04440</b>
+                </li>
+            </ul>
+            <ul class="footer-navigation-left footer-r-align">
+                <li>
+                    <b class="bold-number"><i class="fa fa-facebook icon-some"></i>
+                        <a href="#" class="fcb-contact">Facebook</a>
+                    </b>
+                </li>
+            </ul>
+            <ul class="footer-navigation-left m-right">
+                <li>DOLLY DIMPLE’S</li>
+                <li><a href="#">Pizzaoplevelser!</a></li>
+                <li><a href="#">Franchise</a></li>
+                <li><a href="#">Stillinger</a></li>
+                <li><a href="#">Restauranter</a></li>
+
+
+
+            </ul>
+            <ul class="footer-navigation-left m-right">
+                <li>KUNDESERVICES</li>
+                <li><a href="#">Pizzaoplevelser!</a></li>
+                <li><a href="#">Franchise</a></li>
+                <li><a href="#">Stillinger</a></li>
+                <li><a href="#">Restauranter</a></li>
+            </ul>
+            <ul class="footer-navigation-left m-right">
+                <li>LEGAL</li>
+                <li><a href="#">Pizzaoplevelser!</a></li>
+                <li><a href="#">Franchise</a></li>
+                <li><a href="#">Stillinger</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<script>
+    function initialize() {
+        var mapProp = {
+            center: new google.maps.LatLng(59.9138688, 10.752245399999993),
+            zoom: 6,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</body>
+</html>

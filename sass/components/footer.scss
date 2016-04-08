@@ -1,0 +1,57 @@
+//footer
+@import "../variables/var";
+.divider-footer {
+  width: 1220px;
+}
+
+footer {
+  clear: both;
+}
+.footer {
+
+  width: 1220px;
+  margin: 0 auto;
+
+}
+
+.footer-content {
+  padding: 30px 19.5px;
+}
+
+.footer-content {
+  ul {
+    float: left;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    color: $dark-grey;
+  }
+  li {
+    padding: 10px 12px 0;
+    text-transform: uppercase;
+  }
+  a {
+    text-decoration: none;
+    text-transform: lowercase;
+    color: $dark-grey;
+    font-family: GTWalsheimLight, sans-serif;
+  }
+  .icon-some {
+    padding-right: 5px;
+    font-size: 18px;
+  }
+}
+.fcb-contact {
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 2px;
+}
+.footer-r-align {
+  width: 46%;
+}
+
+.footer-navigation-left {
+  &.m-right {
+    margin-right: 50px;
+  }
+}
