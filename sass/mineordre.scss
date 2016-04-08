@@ -101,23 +101,32 @@
   .box-submit-item {
     padding: 7px 0;
   }
-  .bx-sub-order-white{
+  .bx-sub-order{
     cursor: pointer;
+    font-family: GTWalsheimBold, sans-serif;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
+
+  }
+  .btn-middle {
+    width: 60%;
+  }
+  .btn-white {
     border: solid 2px $dark-grey;
     background: #fff;
-    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
     color: $dark-grey;
-    font-family: GTWalsheimBold, sans-serif;
+  }
+  .btn-black {
+    color: #fff;
+    border: solid 1px #e8e7e4;
+    background: $dark-grey;
+  }
+  .btn-gray {
+    background: $dividers;
+    color: $grey-font;
+    border: solid 1px #e8e7e4;
+
   }
   .col-lg-12 {
     padding: 30px 0 0 0;
-  }
-  .bx-sub-order-black {
-    cursor: pointer;
-    color: #ffffff;
-    border: solid 1px #e8e7e4;
-    background: $dark-grey;
-    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
-    font-family: GTWalsheimBold, sans-serif;
   }
 }

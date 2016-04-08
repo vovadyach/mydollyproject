@@ -1,0 +1,61 @@
+//dinbestilling.scss
+
+.din-container {
+  width: 100%;
+  padding-bottom: 100px;
+  .order-din {
+    .order-content-outer {
+      width: 320px;
+    }
+  }
+}
+
+.total-text {
+  color: $grey-font;
+}
+
+.th-align {
+  text-align: center;
+  padding-left: 70px;
+}
+.th-align-right {
+  text-align: right;
+}
+
+.order-left {
+  .order-left-img {
+    float: left;
+    padding-right: 55px;
+  }
+  .box-submit-align {
+    padding-top: 10px;
+  }
+}
+
+.btn-group {
+  margin: 0;
+  padding: 0;
+
+  .btn-group-link {
+    border: 1px solid $grey-font;
+    width: 30px;
+    height: 30px;
+    float: left;
+    text-align: center;
+    line-height: 1.5;
+    text-decoration: none;
+    display: inline-block;
+  }
+  .link-2 {
+    border-left: 0;
+    border-right: 0;
+  }
+  .b-g-link {
+    font-size: 18px;
+    color: $grey-font;
+  }
+  .item-quantity {
+    color: $dark-grey;
+    cursor: text;
+  }
+}
