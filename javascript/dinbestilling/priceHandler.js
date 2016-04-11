@@ -1,18 +1,22 @@
 /**
  * Created by vinside on 4/8/16.
  */
-
 ;(function($){
     var $container = $(".order-din");
     var $total = $(".total-price-item");
+    var $form = $(".form-section");
+    var $filder = $form.find(".form-group");
+    var $filderInputs = $filder.find("input");
 
+    //Itarates over all possible divs and
     $container.each(function(){
         var $this = $(this);
         var $price = $this.find(".price");
         var price =  $this.data("price");
         var $quantity = $this.find(".item-quantity");
-        var counter = 1;
         var $btn = $this.find('.b-g-link');
+
+        var counter = 1;
 
         $btn.on('click', function (event) {
             $(this).hasClass('item-up') ? counter++ : counter--;
@@ -20,16 +24,15 @@
             if ( counter > 10 )  counter = 10;
             else if ( counter < 1 )  counter = 1;
 
-            $quantity.html( counter );
+            $quantity.val( counter );
             $price.html( counter * price );
 
-            //Calls get total when we increase quantity of items
-            getTotal();
+            $total.html( getTotal() );
 
             event.preventDefault();
         });
-        getTotal();
 
+        $total.html( getTotal() );
     });
 
     /**
@@ -38,59 +41,24 @@
     function getTotal() {
         var sum = 0;
         $container.each(function(){
-            sum += $(this).find(".price").text() * 1;
+            sum += $(this).find(".price").text() * 1; //
         });
 
-        $total.html(sum);
+        return sum;
     }
 })(jQuery);
 
 
-
-
-/*
- /!**
- * Created by vinside on 4/8/16.
- *!/
-
- ;(function($){
- var $container = $(".order-din");
-
- $container.each(function(){
- var $this = $(this);
- var $price = $this.find(".price");
- var $itemDown = $this.find(".item-down");
- var $itemUp = $this.find(".item-up");
- var price =  $this.data("price");
- var $quantity = $(".item-quantity");
- var counter = 1;
- console.log(price);
-
- //$price.html("Hello my friend");
- $itemUp.on("click", function () {
- itemUp(counter);
- });
-
- $itemDown.on("click", function(){
- itemDown(counter);
- });
-
- function itemUp() {
- if (counter < 10) {
- counter++;
- $quantity.html(counter);
- $price.html(price * counter);
- }
- //console.log("count:", counter);
- }
- function itemDown() {
- if (counter > 1) {
- counter--;
- $quantity.html(counter);
- $price.html(price * counter);
- }
- //console.log("count:", counter);
- }
- });
- })(jQuery);
- */
+//$btn.on('click', function (event) {
+//    $(this).hasClass('item-up') ? counter++ : counter--;
+//
+//    if ( counter > 10 )  counter = 10;
+//    else if ( counter < 1 )  counter = 1;
+//
+//    $quantity.html( counter );
+//    $price.html( counter * price );
+//
+//    $total.html( getTotal() );
+//
+//    event.preventDefault();
+//});
