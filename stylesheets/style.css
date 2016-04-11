@@ -622,18 +622,14 @@ footer {
     font-size: 12px; }
   .order-din .order-din-img {
     float: left;
-    width: 70px;
-    height: 69.1px; }
+    width: 70px; }
     .order-din .order-din-img img {
       width: 100%;
       vertical-align: middle;
       height: auto; }
   .order-din .order-content-outer {
-    width: 440px;
-    float: left; }
+    overflow: hidden; }
     .order-din .order-content-outer .order-content {
-      width: 100%;
-      float: left;
       padding-left: 20px; }
       .order-din .order-content-outer .order-content .title {
         font-size: 20px;
@@ -925,8 +921,6 @@ footer {
 .din-container {
   width: 100%;
   padding-bottom: 100px; }
-  .din-container .order-din .order-content-outer {
-    width: 320px; }
 
 .total-text {
   color: #acacb5; }
@@ -941,7 +935,9 @@ footer {
 
 .order-left .order-left-img {
   float: left;
-  padding-right: 55px; }
+  padding-right: 55px;
+  width: 100%;
+  height: auto; }
 .order-left .box-submit-align {
   padding-top: 10px; }
 

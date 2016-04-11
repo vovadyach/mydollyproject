@@ -38,7 +38,6 @@
   .order-din-img {
     float: left;
     width: 70px;
-    height: 69.1px;
     img {
       width: 100%;
       vertical-align: middle;
@@ -46,12 +45,9 @@
     }
   }
   .order-content-outer {
-    width: 440px;
-    float: left;
+    overflow: hidden;
     .order-content {
-      width: 100%;
-      float: left;
-      padding-left: 20px;
+       padding-left: 20px;
       .title {
         font-size: 20px;
         font-weight: bold;

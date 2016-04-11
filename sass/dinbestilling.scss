@@ -3,11 +3,6 @@
 .din-container {
   width: 100%;
   padding-bottom: 100px;
-  .order-din {
-    .order-content-outer {
-      width: 320px;
-    }
-  }
 }
 
 .total-text {
@@ -27,6 +22,8 @@
   .order-left-img {
     float: left;
     padding-right: 55px;
+    width: 100%;
+    height: auto;
   }
   .box-submit-align {
     padding-top: 10px;
