@@ -1,8 +1,9 @@
 //dinbestilling.scss
 
 .din-container {
-  width: 100%;
-  padding-bottom: 100px;
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 5px 15px;
 }
 
 .total-text {
@@ -11,7 +12,7 @@
 
 .th-align {
   text-align: center;
-  padding-left: 70px;
+  padding-left: 140px;
 }
 .th-align-right {
   text-align: right;
@@ -19,14 +20,17 @@
 }
 
 .order-left {
+  .left-img-item {
+    width: 100%;
+    vertical-align: middle;
+  }
   .order-left-img {
     float: left;
-    padding-right: 55px;
-    width: 100%;
-    height: auto;
+    width: 80px;
+    padding: 0 20px 5px 0 ;
   }
   .box-submit-align {
-    padding-top: 10px;
+    padding-top: 6px;
   }
 }
 
@@ -72,30 +76,56 @@
 .order-din-cell {
   vertical-align: middle;
   display: table-cell;
-
+  .price-in-kr {
+    position: relative;
+  }
 }
-.price-in-kr {
-  position: relative;
+.din-item-2 {
+  padding: 0 15px;
 }
-.o-d-c-item-1 {
-  width: 500px
+.din-item-3 {
+  width: 80px;
+  text-align: right;
 }
-.o-d-c-item-2 {
-  width: 226px;
-}
-.o-d-c-item-3 {
-  width: 55px;
-}
-
 
 @media (max-width: 767px){
+  h1 {
+    padding: 0 15px;
+    text-align: center;
+    font-size: 22px;
+  }
+.order-left {
+  .order-left-img {
+    float: none;
+    width: 80px;
+    padding: 0 0 5px 0;
+    margin: 0 auto;
+  }
+}
+    .table {
+    display: none;
+  }
   .order-din-table {
     display: block;
   }
   .order-din-row {
+    .order-din-img {
+      float: none;
+      margin: 0 auto;
+      padding: 10px 0;
+    }
     display: block;
   }
   .order-din-cell {
-    display: inline-block;
+    display: block;
+
+  }
+  .din-item-2 {
+    float: left;
+    padding: 0;
+  }
+  .din-item-3 {
+    float: right;
+    line-height: 0;
   }
 }

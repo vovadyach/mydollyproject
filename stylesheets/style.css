@@ -42,11 +42,6 @@ span {
   font-family: GTWalsheimLight, sans-serif;
   color: #353637; }
 
-.layout {
-  width: 780px;
-  max-width: 100%;
-  margin: 0 auto; }
-
 .row {
   padding-left: -20px; }
 
@@ -236,14 +231,12 @@ span {
     width: 8.33333333333%; } }
 .header-container {
   position: relative;
-  width: 1220px;
-  height: 150px;
-  margin: auto;
-  padding-top: 30px; }
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 30px 15px; }
 
 .logo-container {
-  float: left;
-  margin-left: 20px; }
+  float: left; }
   .logo-container img {
     width: 100%;
     height: auto;
@@ -498,7 +491,7 @@ footer {
   width: 100%; }
 
 .input-field-md {
-  width: 60%; }
+  width: 65%; }
 
 .input-h {
   height: 40px; }
@@ -557,6 +550,9 @@ footer {
     top: 0;
     right: -65px; }
 
+@media (max-width: 767px) {
+  .input-field-md {
+    width: 100%; } }
 .tittle-kommer-wrapper {
   margin: 0 auto;
   width: 780px;
@@ -610,7 +606,7 @@ footer {
 
 .order-din {
   position: relative;
-  padding-top: 20.2px; }
+  padding: 20.2px 0; }
   .order-din .price-in-kr {
     position: absolute;
     right: 0;
@@ -630,7 +626,8 @@ footer {
   .order-din .order-content-outer {
     overflow: hidden; }
     .order-din .order-content-outer .order-content {
-      padding-left: 20px; }
+      padding-left: 15px;
+      max-width: 350px; }
       .order-din .order-content-outer .order-content .title {
         font-size: 20px;
         font-weight: bold;
@@ -643,8 +640,7 @@ footer {
         padding: 0; }
 
 .order-align-total {
-  width: 100%;
-  padding-top: 18.5px;
+  padding: 18.5px 0;
   position: relative; }
   .order-align-total h4 {
     margin-bottom: 0; }
@@ -652,8 +648,7 @@ footer {
     margin-top: 0; }
   .order-align-total .order-left {
     width: 45%;
-    float: left;
-    padding-left: 20px; }
+    float: left; }
   .order-align-total .order-right {
     float: right;
     height: 100px;
@@ -670,9 +665,17 @@ footer {
     font-size: 16px;
     color: #353637; }
 
+.din-img-item {
+  width: 100%;
+  height: auto;
+  vertical-align: middle; }
+
 .font-bold {
   font-family: GTWalsheimBold, sans-serif; }
 
+@media screen and (max-width: 767px) {
+  .order-din .order-content-outer .order-content {
+    padding-left: 0; } }
 .container-layout {
   max-width: 1200px;
   width: 100%;
@@ -844,7 +847,7 @@ footer {
 .table-body-item {
   height: 50px;
   display: table-cell;
-  width: 44%;
+  width: 45%;
   padding: 15px; }
 
 .table-body-item {
@@ -919,27 +922,30 @@ footer {
   padding: 30px 0 0 0; }
 
 .din-container {
-  width: 100%;
-  padding-bottom: 100px; }
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 5px 15px; }
 
 .total-text {
   color: #acacb5; }
 
 .th-align {
   text-align: center;
-  padding-left: 70px; }
+  padding-left: 140px; }
 
 .th-align-right {
   text-align: right;
   padding-right: 22px; }
 
+.order-left .left-img-item {
+  width: 100%;
+  vertical-align: middle; }
 .order-left .order-left-img {
   float: left;
-  padding-right: 55px;
-  width: 100%;
-  height: auto; }
+  width: 80px;
+  padding: 0 20px 5px 0; }
 .order-left .box-submit-align {
-  padding-top: 10px; }
+  padding-top: 6px; }
 
 .btn-group {
   margin: 0;
@@ -976,27 +982,50 @@ footer {
 .order-din-cell {
   vertical-align: middle;
   display: table-cell; }
+  .order-din-cell .price-in-kr {
+    position: relative; }
 
-.price-in-kr {
-  position: relative; }
+.din-item-2 {
+  padding: 0 15px; }
 
-.o-d-c-item-1 {
-  width: 500px; }
-
-.o-d-c-item-2 {
-  width: 226px; }
-
-.o-d-c-item-3 {
-  width: 55px; }
+.din-item-3 {
+  width: 80px;
+  text-align: right; }
 
 @media (max-width: 767px) {
+  h1 {
+    padding: 0 15px;
+    text-align: center;
+    font-size: 22px; }
+
+  .order-left .order-left-img {
+    float: none;
+    width: 80px;
+    padding: 0 0 5px 0;
+    margin: 0 auto; }
+
+  .table {
+    display: none; }
+
   .order-din-table {
     display: block; }
 
   .order-din-row {
     display: block; }
+    .order-din-row .order-din-img {
+      float: none;
+      margin: 0 auto;
+      padding: 10px 0; }
 
   .order-din-cell {
-    display: inline-block; } }
+    display: block; }
+
+  .din-item-2 {
+    float: left;
+    padding: 0; }
+
+  .din-item-3 {
+    float: right;
+    line-height: 0; } }
 
 /*# sourceMappingURL=style.css.map */

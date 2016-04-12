@@ -24,7 +24,7 @@
 }
 
 .input-field-md {
-  width: 60%;
+  width: 65%;
 }
 .input-h {
   height: 40px;
@@ -94,6 +94,12 @@
       top: 0;
       right: -65px;
     }
+  }
+}
+
+@media (max-width: 767px) {
+  .input-field-md {
+    width: 100%;
   }
 }
 
