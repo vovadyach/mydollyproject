@@ -31,6 +31,10 @@
             </div>
         </div>
     </div>
+    <button class="c-hamburger c-hamburger--rot">
+        <span>toggle menu</span>
+    </button>
+
 </header>
 <div class="mask">
     <div id="googleMap"></div>
@@ -223,7 +227,7 @@
                 </li>
             </ul>
             <ul class="footer-navigation-left m-right">
-                <li>DOLLY DIMPLE’S</li>
+                <li><strong>DOLLY DIMPLE’S</strong></li>
                 <li><a href="#">Pizzaoplevelser!</a></li>
                 <li><a href="#">Franchise</a></li>
                 <li><a href="#">Stillinger</a></li>
@@ -233,14 +237,14 @@
 
             </ul>
             <ul class="footer-navigation-left m-right">
-                <li>KUNDESERVICES</li>
+                <li><strong>KUNDESERVICES</strong></li>
                 <li><a href="#">Pizzaoplevelser!</a></li>
                 <li><a href="#">Franchise</a></li>
                 <li><a href="#">Stillinger</a></li>
                 <li><a href="#">Restauranter</a></li>
             </ul>
             <ul class="footer-navigation-left m-right">
-                <li>LEGAL</li>
+                <li><strong>LEGAL</strong></li>
                 <li><a href="#">Pizzaoplevelser!</a></li>
                 <li><a href="#">Franchise</a></li>
                 <li><a href="#">Stillinger</a></li>
@@ -248,7 +252,7 @@
         </div>
     </div>
 </footer>
-
+<script src="javascript/hamburger.js"></script>
 <script>
     function initialize() {
         var mapProp = {
@@ -260,5 +264,6 @@
     }
     google.maps.event.addDomListener(window, 'load', initialize);
 </script>
+
 </body>
 </html>

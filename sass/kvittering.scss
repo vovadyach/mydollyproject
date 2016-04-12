@@ -1,8 +1,9 @@
 //kvittering.scss
 
 .kvitt-content {
-  width: 100%;
-  line-height: 20px;
+  padding: 1px 15px;
+  max-width: 800px;
+  margin: 0 auto;;
 
     .row {
       padding-top: 20px;
@@ -80,7 +81,6 @@
   }
   .order-right {
     float: right;
-    height: 100px;
     width: 50%;
     .divider-right {
       width: 100%;

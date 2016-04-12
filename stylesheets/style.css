@@ -295,17 +295,17 @@ span {
   cursor: pointer; }
 
 .mask #googleMap {
-  width: 100%;
+  max-width: 100%;
   height: 450px;
+  padding: 15px 15px;
   border-bottom: 2px solid #e9e9ea; }
 
 .mask {
-  width: 100%;
   margin-bottom: 40px; }
 
 .input {
-  width: 800px;
-  padding-top: 40px;
+  max-width: 800px;
+  padding: 40px 15px;
   margin: 0 auto; }
 
 .btn-input {
@@ -328,6 +328,7 @@ span {
   height: 40px;
   padding: 15px 27px;
   line-height: 1px;
+  background: #e9e9ea;
   border: solid 2px #353637; }
 
 .main-contacts {
@@ -399,15 +400,13 @@ span {
 .divider-footer {
   width: 1220px; }
 
-footer {
-  clear: both; }
-
 .footer {
-  width: 1220px;
-  margin: 0 auto; }
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 1px 15px; }
 
 .footer-content {
-  padding: 30px 19.5px; }
+  padding: 30px 0; }
 
 .footer-content ul {
   float: left;
@@ -436,7 +435,8 @@ footer {
   width: 46%; }
 
 .footer-navigation-left.m-right {
-  margin-right: 50px; }
+  margin-right: 50px;
+  margin-bottom: 20px; }
 
 .divider-main {
   width: 100%;
@@ -446,12 +446,13 @@ footer {
   border: 1px solid #e9e9ea; }
 
 .contacts-container {
-  width: 1199px;
-  position: relative;
-  margin: 0 auto; }
+  position: relative; }
 
 .contacts-content {
-  padding-top: 30px;
+  max-width: 1199px;
+  position: relative;
+  margin: 0 auto;
+  padding: 30px 15px;
   font-family: GTWalsheimLight, sans-serif; }
 
 .contacts-nav {
@@ -471,6 +472,29 @@ footer {
 .contacts-nav:nth-child(4n + 1) {
   clear: left; }
 
+::-webkit-input-placeholder {
+  line-height: 1; }
+
+@media screen and (max-width: 767px) {
+  .contacts-nav {
+    width: 50%; }
+
+  .navigation,
+  .header-right {
+    display: none; }
+
+  .logo-container {
+    width: 220px; } }
+@media screen and (max-width: 397px) {
+  .contacts-nav {
+    width: 100%; }
+
+  .navigation,
+  .header-right {
+    display: none; }
+
+  .logo-container {
+    width: 200px; } }
 .contact-scheme {
   float: left;
   width: 45%; }
@@ -590,8 +614,9 @@ footer {
   margin-top: 0; }
 
 .kvitt-content {
-  width: 100%;
-  line-height: 20px; }
+  padding: 1px 15px;
+  max-width: 800px;
+  margin: 0 auto; }
   .kvitt-content .row {
     padding-top: 20px;
     padding-bottom: 60px; }
@@ -651,7 +676,6 @@ footer {
     float: left; }
   .order-align-total .order-right {
     float: right;
-    height: 100px;
     width: 50%; }
     .order-align-total .order-right .divider-right {
       width: 100%;
@@ -888,15 +912,13 @@ footer {
   .modal-container .mc-cell {
     display: table-cell;
     vertical-align: middle; }
-  .modal-container .mc-popup {
-    width: 820px;
-    height: 850px;
-    background: #FFF;
-    margin: 0 auto;
-    box-shadow: 0 0 27px rgba(0, 0, 0, 0.55); }
   .modal-container .mc-popup-box {
-    width: 100%;
-    padding: 20.5px; }
+    box-shadow: 0 0 27px rgba(0, 0, 0, 0.55);
+    max-width: 800px;
+    height: auto;
+    background: #fff;
+    padding: 20.5px 15px;
+    margin: 0 auto; }
 
 .box-submit .box-submit-item {
   padding: 7px 0; }
@@ -992,7 +1014,7 @@ footer {
   width: 80px;
   text-align: right; }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   h1 {
     padding: 0 15px;
     text-align: center;
@@ -1004,7 +1026,7 @@ footer {
     padding: 0 0 5px 0;
     margin: 0 auto; }
 
-  .table {
+  .din-table {
     display: none; }
 
   .order-din-table {
@@ -1027,5 +1049,86 @@ footer {
   .din-item-3 {
     float: right;
     line-height: 0; } }
+/* -----------------------------------------------------------------------------
+  HAMBURGER ICONS COMPONENT
+
+----------------------------------------------------------------------------- */
+/**
+ * Toggle Switch Globals
+ *
+ * All switches should take on the class `c-hamburger` as well as their
+ * variant that will give them unique properties. This class is an overview
+ * class that acts as a reset for all versions of the icon.
+ */
+.c-hamburger {
+  display: none;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 96px;
+  height: 96px;
+  font-size: 0;
+  text-indent: -9999px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s; }
+
+.c-hamburger:focus {
+  outline: none; }
+
+.c-hamburger span {
+  display: block;
+  position: absolute;
+  top: 44px;
+  left: 18px;
+  right: 18px;
+  height: 8px;
+  background: white; }
+
+.c-hamburger span::before,
+.c-hamburger span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background-color: #fff;
+  content: ""; }
+
+.c-hamburger span::before {
+  top: -20px; }
+
+.c-hamburger span::after {
+  bottom: -20px; }
+
+/**
+ * Style 1
+ *
+ * Rotating hamburger icon (rot), that simply rotates 90 degrees when activated.
+ * Nothing too fancy, simple transition.
+ */
+.c-hamburger--rot {
+  background-color: #28aadc; }
+
+.c-hamburger--rot span {
+  transition: transform 0.3s; }
+
+/* active state, i.e. menu open */
+.c-hamburger--rot.is-active {
+  background-color: #166888; }
+
+.c-hamburger--rot.is-active span {
+  transform: rotate(90deg); }
+
+@media screen and (max-width: 767px) {
+  .c-hamburger {
+    display: block;
+    float: right; } }
 
 /*# sourceMappingURL=style.css.map */
