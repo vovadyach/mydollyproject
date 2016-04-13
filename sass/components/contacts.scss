@@ -3,8 +3,8 @@
 @import "../variables/var";
 
 .main-contacts {
-  padding-bottom: 120px;
-  width: 800px;
+  padding: 30px 15px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -19,8 +19,7 @@
   color: $dark-grey;
 }
 .divider {
-  width: 100%;
-  height: 0;
+
   padding: 0;
   margin: 0;
   border: 1px solid $dividers;
@@ -38,7 +37,9 @@
     font-family: "GTWalsheimBold", sans-serif;
   }
 }
-.clear-fix:after {
+.clear-fix:before,
+.clear-fix:after
+{
   content: '.';
   display: block;
   clear: both;
@@ -57,18 +58,15 @@
 }
 .text-p {
   padding-top: 4px;
-  height: 92px;
   font-size: 14px;
   color: $dark-grey
 }
 .address {
   padding: 0;
   margin: 0;
-  width: 157px;
   font-size: 14px;
 }
 
 .main-contacts-articles {
   font-family: GTWalsheimLight, sans-serif;
-  font-size: 14px;
 }

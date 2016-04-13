@@ -8,29 +8,36 @@
     <title>Kontakt Oss</title>
 </head>
 <body>
-<header class="header-container clear-fix">
-    <div class="logo-container">
-        <a href="#">
-            <img src="images/logo.svg" alt="Dolly Dimple's"/>
-        </a>
-    </div>
-    <div class="navigation-outer">
-        <nav class="navigation">
-            <ul class="ul-nav">
-                <li class="li-item"><a href="#">Meny</a></li>
-                <li class="li-item"><a href="#">Restauranter</a></li>
-                <li class="li-item"><a href="#">Min side</a></li>
-            </ul>
-        </nav>
+<header class="header-container">
+    <nav class="header">
         <div class="header-right">
             <div class="header-inner-right">
                 <span class="basket-item"></span>
                 <a href="#" class="header-right-link">Bestilling
-                    <span class="header-cart-item">0</span>
                 </a>
+                <span class="header-cart-item">0</span>
             </div>
         </div>
-    </div>
+        <div class="logo-container">
+            <a href="#" class="header-logo"></a>
+            <!--<img src="images/logo.svg" alt="Dolly Dimple's"/>-->
+
+            <a href="#" class="header-toggle-btn"></a>
+        </div>
+        <div class="nav-overlay"></div>
+        <div class="navigation-outer">
+            <div class="nav-logo">
+                <img src="images/logo.svg" alt=""/>
+            </div>
+            <nav class="navigation">
+                <ul class="ul-nav">
+                    <li class="li-item"><a href="#">Meny</a></li>
+                    <li class="li-item"><a href="#">Restauranter</a></li>
+                    <li class="li-item"><a href="#">Min side</a></li>
+                </ul>
+            </nav>
+        </div>
+    </nav>
 </header>
 <!--END -HEADER-->
 <div class="main-contacts">
@@ -89,7 +96,7 @@
 
                 </div>
                 <div class="box-submit row">
-                    <div class="col-lg-12">
+                    <div class="col-lg-12 contact-scheme-align">
                         <input class="btn-sb-contactus input-field-w" type="submit" value="SEND"/>
                     </div>
                 </div>

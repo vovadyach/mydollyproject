@@ -2,32 +2,49 @@
 
 .header-container {
   position: relative;
-  max-width: 1220px;
-  margin:  0 auto;
-  padding: 30px 15px;
+  //max-width: 1220px;
+  //margin:  0 auto;
+  //padding: 30px 15px;
 }
-
+.header {
+  width: 1220px;
+  max-width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+  height: 150px;
+  position: static;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-bottom: 0;
+  background: #fff;
+}
 .logo-container {
+  .header-logo {
     float: left;
-  img {
-    width: 100%;
-    height: auto;
-    vertical-align: middle;
+    width: 171px;
+    height: 70px;
+    margin-right: 60px;
+    background-size: 171px 70px;
+    background-image: url(../images/logo.svg);
   }
 }
-  .header-right {
-    float: right;
-    .header-cart-item {
-      margin-left: 5px;
-      display: inline-block;
-      background: #5db167;
-      color: #fff;
-      width: 24px;
-      height: 24px;
-      line-height: 24px;
-      text-align: center;
-    }
+.header-right {
+  float: right;
+  padding-top: 20px;
+  .header-cart-item {
+    margin-left: 5px;
+    display: inline-block;
+    background: #5db167;
+    color: #fff;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
   }
+}
 .navigation-outer{
   padding-top: 20px;
   a {
@@ -78,4 +95,100 @@
   float: left;
   background: url(../images/basket.svg);
   cursor: pointer;
+}
+
+.header-right-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #353637;
+  font-weight: bold;
+  font-family: GTWalsheimBold, sans-serif;
+}
+
+.nav-logo {
+  display: none;
+  padding: 10px 87px;
+}
+
+.nav-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgba(51, 51, 51, 0.36);
+}
+
+
+@media screen and (max-width: 767px){
+  .header-container {
+    height: 60px;
+  }
+  .navigation,
+  .header-right {
+    display: block;
+    padding-top: 5px;
+  }
+  .header {
+    width: 1220px;
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    z-index: 1;
+    height: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: #e9e9ea solid 1px;
+    margin-bottom: 40px;
+  }
+
+  .header-right-link,
+  .basket-item {
+    display: none;
+  }
+  .logo-container {
+    .header-logo {
+      float: none;
+      width: 135px;
+      height: 29px;
+      display: block;
+      overflow: hidden;
+      margin: 0 auto;
+      background-size: 135px 29px;
+      background-repeat: no-repeat;
+      background-image: url(../images/logo-mobile.svg);
+    }
+  }
+  .navigation-outer {
+    -webkit-transition: 0.8s all;
+    -moz-transition: 0.8s all;
+    -ms-transition: 0.8s all;
+    -o-transition: 0.8s all;
+    transition: 0.8s all;
+    position: fixed;
+    background: #FFF;
+    max-width: 280px;
+    height: 100%;
+    top: 0;
+    left: -360px;
+    box-shadow: 7px 19px 20px rgba(16, 16, 14, 0.63);
+    .li-item {
+      display: block;
+    }
+
+    .nav-logo {
+      display: block;
+      padding: 10px 50px;
+    }
+  }
+  .menu-open .nav-overlay {
+    display: block;
+  }
+  .menu-open .navigation-outer {
+    left: 0;
+  }
 }
