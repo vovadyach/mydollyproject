@@ -229,6 +229,9 @@ span {
 
   .col-lg-1 {
     width: 8.33333333333%; } }
+ul, ol {
+  margin-top: 0; }
+
 .header-container {
   position: relative; }
 
@@ -263,6 +266,7 @@ span {
     display: inline-block;
     background: #5db167;
     color: #fff;
+    cursor: pointer;
     width: 24px;
     height: 24px;
     line-height: 24px;
@@ -280,7 +284,6 @@ span {
 
 .navigation {
   padding-top: 5px;
-  margin: 0 0 0 25px;
   float: left; }
   .navigation ul {
     margin: 0;
@@ -328,6 +331,105 @@ span {
   width: 100%;
   background: rgba(51, 51, 51, 0.36); }
 
+.subheader {
+  border-top: #e9e9ea solid 1px;
+  border-bottom: #e9e9ea solid 1px; }
+
+.subheader {
+  display: block;
+  left: 0; }
+  .subheader ul {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 0; }
+    .subheader ul li {
+      display: inline; }
+
+.subheader-menu {
+  width: 1200px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px; }
+
+.subheader-menu-inner {
+  position: relative;
+  white-space: nowrap; }
+
+.subheader-menu-link {
+  margin-right: 20px;
+  position: relative;
+  display: inline-block;
+  height: 38px;
+  font-size: 13px;
+  line-height: 38px;
+  text-transform: uppercase;
+  color: #acacb5;
+  font-family: GTWalsheimBold, sans-serif;
+  text-decoration: none; }
+  .subheader-menu-link.subheader-menu-link-active {
+    color: #353637; }
+
+.subheader-link-dropdown::after {
+  content: '';
+  width: 8px;
+  display: inline-block;
+  height: 7px;
+  margin-left: 5px;
+  background-image: url(../images/menu/dropdown-gray.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%; }
+
+.subheader {
+  position: relative; }
+
+.dropdown {
+  transition-property: height;
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+  overflow: hidden; }
+
+.dropdown.closed {
+  height: 0 !important; }
+
+.subheaderul {
+  display: inline; }
+.subheader .subheader-menu-link:hover {
+  color: #353637; }
+
+.subheader-dropdown {
+  position: relative; }
+  .subheader-dropdown.active {
+    display: inline; }
+
+.subheader-dropdown.closed,
+.subheader-dropdown-list.closed {
+  display: none; }
+
+.subheader-dropdown-list {
+  display: none;
+  position: absolute;
+  left: -20px;
+  top: 100%;
+  border-left: #e9e9ea solid 1px;
+  border-bottom: #e9e9ea solid 1px;
+  border-right: #e9e9ea solid 1px;
+  background: #fff;
+  margin-top: 10px;
+  padding-bottom: 10px; }
+
+.subheader-dropdown-list {
+  display: none; }
+
+.subheader-dropdown:hover .subheader-dropdown-list {
+  display: block; }
+  .subheader-dropdown:hover .subheader-dropdown-list .subheader-menu-link {
+    display: block;
+    padding: 0 20px;
+    margin-right: 0; }
+
 @media screen and (max-width: 767px) {
   .header-container {
     height: 60px; }
@@ -340,15 +442,12 @@ span {
   .header {
     width: 1220px;
     max-width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
     margin-left: auto;
     margin-right: auto;
     position: fixed;
     z-index: 1;
     height: 50px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 20px;
     border-bottom: #e9e9ea solid 1px;
     margin-bottom: 40px; }
 
@@ -381,7 +480,9 @@ span {
     left: -360px;
     box-shadow: 7px 19px 20px rgba(16, 16, 14, 0.63); }
     .navigation-outer .li-item {
-      display: block; }
+      display: block;
+      padding: 15px 10px;
+      margin-left: 20px; }
     .navigation-outer .nav-logo {
       display: block;
       padding: 10px 50px; }
@@ -498,23 +599,25 @@ span {
 .footer-content {
   padding: 30px 0; }
 
-.footer-content ul {
-  float: left;
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-  color: #353637; }
-.footer-content li {
-  padding: 10px 12px 0;
-  text-transform: uppercase; }
-.footer-content a {
-  text-decoration: none;
-  text-transform: lowercase;
-  color: #353637;
-  font-family: GTWalsheimLight, sans-serif; }
-.footer-content .icon-some {
-  padding-right: 5px;
-  font-size: 18px; }
+.footer-content {
+  border-top: 2px solid #e9e9ea; }
+  .footer-content ul {
+    float: left;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    color: #353637; }
+  .footer-content li {
+    padding: 10px 12px 0;
+    text-transform: uppercase; }
+  .footer-content a {
+    text-decoration: none;
+    text-transform: lowercase;
+    color: #353637;
+    font-family: GTWalsheimLight, sans-serif; }
+  .footer-content .icon-some {
+    padding-right: 5px;
+    font-size: 18px; }
 
 .fcb-contact {
   text-transform: uppercase;
@@ -1162,6 +1265,9 @@ span {
   display: block;
   content: '';
   background-image: url(../images/hamburger.svg); }
+
+.main-grid {
+  height: 500px; }
 
 .footer-links {
   float: left;
