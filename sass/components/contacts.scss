@@ -40,7 +40,7 @@
 .clear-fix:before,
 .clear-fix:after
 {
-  content: '.';
+  content: '';
   display: block;
   clear: both;
   visibility: hidden;
